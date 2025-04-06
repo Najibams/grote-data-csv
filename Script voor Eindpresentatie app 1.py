@@ -33,10 +33,10 @@ def load_journey_data(file_path):
     return pd.read_csv(file_path)
 
 # Bestanden inlezen
-weather_file = r"C:\Users\Jazz Fust\Downloads\weather_new.csv"
-journey_file = r"C:\Users\Jazz Fust\Downloads\147JourneyDataExtract30Jan2019-05Feb2019.csv"
-stations_file = r"C:\Users\Jazz Fust\Downloads\cycle_stations.csv"
-london_stations_file = r"C:\Users\Jazz Fust\Downloads\London stations.csv"
+weather_file = r"weather_new 2.csv"
+journey_file = r"147JourneyDataExtract30Jan2019-05Feb2019.csv"
+stations_file = r"cycle_stations 2.csv"
+london_stations_file = r"London stations 1.csv"
 
 # Weather data inlezen
 weather_df = load_weather_data(weather_file)
@@ -196,10 +196,10 @@ elif dashboard_option == "Oud Dashboard":
 elif dashboard_option == "Nieuw Dashboard":
     
     # Bestanden inlezen
-    file1 = r"C:\Users\Jazz Fust\Downloads\96JourneyDataExtract07Feb2018-13Feb2018.csv"
-    file2 = r"C:\Users\Jazz Fust\Downloads\97JourneyDataExtract14Feb2018-20Feb2018.csv"
-    file3 = r"C:\Users\Jazz Fust\Downloads\98JourneyDataExtract21Feb2018-27Feb2018.csv"
-    file4 = r"C:\Users\Jazz Fust\Downloads\99JourneyDataExtract28Feb2018-06Mar2018.csv"
+    file1 = r"96JourneyDataExtract07Feb2018-13Feb2018 2.csv"
+    file2 = r"97JourneyDataExtract14Feb2018-20Feb2018 2.csv"
+    file3 = r"98JourneyDataExtract21Feb2018-27Feb2018 2.csv"
+    file4 = r"99JourneyDataExtract28Feb2018-06Mar2018 2.csv"
     
     # DataFrames inlezen
     file1_df = pd.read_csv(file1)
@@ -214,8 +214,8 @@ elif dashboard_option == "Nieuw Dashboard":
     cleaned_data_journey = combined_df[combined_df['Duration'] <= 1900]
     
     # Inlezen van de stationsgegevens
-    stations_file = r"C:\Users\Jazz Fust\Downloads\cycle_stations.csv"
-    london_stations_file = r"C:\Users\Jazz Fust\Downloads\London stations.csv"
+    stations_file = r"cycle_stations 2.csv"
+    london_stations_file = r"London stations 1.csv"
     
     # Stationsgegevens inlezen
     stations_df = pd.read_csv(stations_file)
@@ -262,7 +262,7 @@ elif dashboard_option == "Nieuw Dashboard":
     cleaned_data_merged = merged_data.dropna(axis=1)
     
     # Weather data inlezen
-    weather_file = r"C:\Users\Jazz Fust\Downloads\weather_new.csv"
+    weather_file = r"weather_new 2.csv"
     weather_df = pd.read_csv(weather_file)
     
     # Weather data opschonen
